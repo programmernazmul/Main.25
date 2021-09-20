@@ -1,0 +1,276 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* ================================ */
+/* pricing_table Section>>>>>>>>>>> */
+/* ================================ */
+.pricing_table{
+    background:#f6f9fc ;
+}
+.pricing_title h5 {
+	font-size: 15px;
+	font-weight: 500;
+	color: #6764db;
+	margin-bottom: 20px;
+}
+.pricing_title h2 {
+	font-weight: 600;
+	margin-bottom: 50px;
+    position: relative;
+}
+/*  After pricing_title h2 <<<<<<<<<<<<<<<<<<<< */
+.pricing_title h2::after {
+	position: absolute;
+	content: "";
+	left: 284px;
+	bottom: -24px;
+	width: 70px;
+	height: 3px;
+	background: #2f5dea;
+}
+
+.pricing_title p {
+	font-weight: 600;
+	color: #7d7b7b;
+}
+/* Card item>>>>>>>>>>>>>>>>>>>>>>>> */
+.card_item{
+    text-align: center;
+    background: #fff;
+    padding: 50px 0;
+    transition: all.5s;
+}
+/* Hover Part Card item >>>>>>>>>>>>>> */
+.card_item:hover{
+    background-color: #2f65eb;
+}
+.card_item:hover.card_item h2{
+    color: #fff;
+}
+.card_item:hover.card_item h6{
+    color: #fff;
+}
+.card_item:hover.card_item p{
+    color: #fff;
+}
+.card_item:hover.card_item a{
+    color: #0d6efd;
+    background-color: #fff;
+    border-left:1px solid #fff ;
+    border-right:1px solid #fff ;
+}
+.card_item a:hover::before{
+    width: 100%;
+} 
+.card_item a:hover{
+    color: #fff !important;
+}
+
+.card_item h6 {
+	font-weight: 600;
+	margin-bottom: 33px;
+	font-size: 18px;
+    transition: all 1s;
+}
+.card_item h2 {
+	font-size: 42px;
+	font-weight: 600;
+    position: relative;
+    transition: all 1s;
+}
+/* .card_item h2  After >>>>>>>>>>>>>>>>>>>> */
+.card_item h2::after {
+	position: absolute;
+	content: "";
+	width: 180px;
+	height: 1px;
+	left: 120px;
+	bottom: -51px;
+	background-color: #e2d6d6;
+    
+}
+.card_item span {
+	margin-bottom: 60px;
+	display: inline-block;
+	color: #fff;
+}
+.card_item h2 i {
+	font-size: 45px;
+}
+.card_item p {
+	font-weight: 500;
+	color: #a4a1a1;
+    transition: all.5s;
+}
+.card_item a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0d6efd;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 10px;
+    transition: all.5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+/* card_item a Before>>>>>>>>>>>>>> */
+.card_item a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:#0644e0;
+    border-radius: 30px;
+    transition: all.5s;
+    z-index: -1;
+    
+
+} 
+/* ================================ */
+/* News Letter Section >>>>>>>>>>>> */
+/* ================================ */
+.news_letter_section{
+	background: url(img/free-bg.jpg) no-repeat 50% 50%;
+	background-size: cover;
+    padding: 130px 0;
+	position: relative;
+	z-index: 1;
+}
+.news_letter_section::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(30, 75, 211, 0.7);
+	z-index: -1;
+}
+.letter_item{
+	
+}
+.letter_item h2 {
+	font-weight: 600;
+	font-size: 37px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	position: relative;
+}
+.letter_item h2::after {
+	position: absolute;
+	content: "";
+	width: 70px;
+	height: 2px;
+	left: 285px;
+	bottom: -20px;
+	background-color: #fff;
+}
+.letter_item p {
+	font-weight: 600;
+	width: 80%;
+	margin: auto;
+}
+.letter_item a {
+	text-decoration: none;
+	color: #3b66db;
+	font-weight: 600;
+	background: #fff;
+	display: inline-block;
+	padding: 15px 20px;
+	border-radius: 30px;
+	margin-top: 40px;
+	position: relative;
+	border: 2px solid #fff;
+	z-index: 1;
+	overflow: hidden;
+	transition: all.5s;
+}
+.letter_item a::before{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #055bdd;
+	border-radius: 30px;
+	z-index: -1;
+	transition: all.5s;
+	overflow: hidden;
+	
+}
+.letter_item a:hover::before{
+	width: 100%;
+}
+.letter_item a:hover{
+	color: #fff;
+}
+/* ================================== */
+/* ================================== */
+.news_form{
+	padding: 80px 0;
+	background: #f6f9fc;
+}
+.letter_form{
+	background: #3763eb;
+	border-radius: 5px;
+}
+.letter_form h2 {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.letter_form p {
+	width: 49%;
+	margin-bottom: 25px;
+}
+.letter_input input {
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+.letter_input input:focus{
+	outline: none;
+}
+.letter_input a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 8px 30px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	font-weight: 600;
+}
+.letter_form_btn {
+	background: #fff;
+	padding: 40px;
+}
+.letter_form_btn p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 100px;
+	width: 90%;
+}
+.letter_form_btn a {
+	text-decoration: none;
+	background: #0d6efd;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 30px;
+	font-weight: 600;
+	transition: all.5s;
+}
+.letter_form_btn a:hover{
+	background: #055bdd;
+}
